@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} header {
+    background-color:rgba(220, 255, 235, 1);
+    height: 70px;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.header-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none; /* убирает нижнее подчеркивание */
+}
+a:not(:last-child) { /* добовляет отступ для всех кроме крайнего элем */
+    margin-right: 20px;
+}
+.social-icons:not(:last-child) { /* добовляет отступ для всех кроме крайнего элем */
+    margin-right: 30px;
+}
+/* o nas */
+.about {
+    display: flex; /* создает невидимый контейнер для распредиления */
+    align-items: center;
+}
+/* добовляем значения по классам */
+.about-amg { 
+    width: 50%;
+}
+.about-info {
+    padding: 0 65px;
+}
+h1 {
+    font-size: 35px; /* размер текста*/
+    text-align: center;
+    margin-bottom: 20px; /* отступ с низу*/
+}
+.about-descr {
+    font-size: 20px;
+    text-align: justify;
+}
+.projekts {
+    background-color:#DCFFEB;
+    ;
+    padding: 125px 0;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.projekts-list {
+    display: flex;
+    gap: 35px;
+}
+.projekts-item {
+    width: calc(100% / 3 - 17px);
+}
+h3 {
+    font-size: 35px;
+    margin-top: 85px;
+}
+.footer-info {
+    display: flex; /* создает невидимый контейнер для распредиления */
+    justify-content: space-between;
+    padding: 55px 0;
+}
+.footer-item {
+    text-align: center;
+    width: 20%;
+}
+.footer-title {
+    color:#999;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.footer-descr {
+    font-size: 25px;
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 1);
+}
+.red .footer-descr {
+    font-weight: 600px;
+    color:rgba(247, 101, 74, 1);
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    Задача. Всем элементам с классом .social-icon, кроме последнего добавить отступ
+    
+    :not - НЕ добовлять
+    :last-child - последний элемент
+    :first-child - первый элемент
+    :nth-child(N) - задаем стили для N элемента  
+*/
